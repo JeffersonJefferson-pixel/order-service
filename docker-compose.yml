@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+
+  order-service-db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: order-service
+    ports:
+      - "3306:3306"
